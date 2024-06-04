@@ -1,0 +1,307 @@
+#container {
+    overflow: hidden;
+}
+#banner {
+    margin: 0 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#banner-image {
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner-image > img {
+    object-fit: contain;
+}
+
+#banner-image > img:nth-child(2) {
+    margin-top: -200px;
+}
+
+#banner-image > img:last-child {
+    margin-right: 120px;
+}
+
+#banner > h2 {
+    font-size: 400px;
+    white-space: nowrap;
+    font-weight: 700;
+    font-family: "GentleMonster PROTO Condensed";
+}
+
+#wrap-container {
+    margin: 0 50px;
+}
+
+#intro-container {
+    display: flex;
+    justify-content:center;
+    margin: 100px 0;
+}
+
+#intro-container > div > h2 {
+    font-size: 5rem;
+    font-family: 'I fink u freeky', sans-serif;                                              
+    background: linear-gradient(0deg, #740075,#7ceeff);
+    background-clip: text;
+    color: transparent;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#intro-container > div:first-child {
+    padding: 0 100px;
+}
+
+#intro-container > div > p {
+    display: block;
+    width: 500px;
+    font-size: 1.5rem;
+    padding: 50px 0;
+    line-height: 2.5rem;
+    padding: 40px 100px;
+
+    position: relative;
+    bottom: -20px;
+
+}
+
+#intro-container > div > img {
+    width: 700px;
+    height: 700px;
+    padding: 0 100px;
+}
+
+#newitems-container {
+    margin: 100px 0;
+}
+
+#newitems-container > h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#newitems-container > ul {
+    display: flex;
+    /* white-space: nowrap */
+    justify-content: space-between;
+    
+}
+
+#newitems-container > ul > li {
+    align-items: center;
+}
+
+
+#collection-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 100px 0;
+    
+}
+
+#collection-container > div > h2 {
+    font-size: 80px;
+    font-family: 'I fink u freeky', sans-serif;
+    background: linear-gradient(0deg, #740075,#7ceeff);
+    background-clip: text;
+    color: transparent;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#collection-container > div > h2 > span {
+    display: block;
+}
+
+#collection-container > div > p {
+    width: 500px;
+    line-height: 2rem;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+#collection-container > div:nth-child(1) {
+    margin: 0 auto;
+}
+
+#collection-container > div:nth-child(1) > div  > a {
+    display: block;
+    width: 250px;
+    height: 40px;
+    border: 2px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+
+#collection-container > div:nth-child(1) > div  > a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background-color: #fff;
+    transition: all 0.4s;
+}
+
+#collection-container > div:nth-child(1) > div  > a:hover {
+    color: #333;
+    box-shadow: 0 0 10px #333;
+}
+
+#collection-container > div:nth-child(1) > div  > a:hover::before {
+    width: 100%;
+}
+
+
+#collabo-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#collabo-container > div:nth-child(1) {
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+#collabo-container > div > h2 {
+    font-size: 80px;
+    font-family: 'I fink u freeky', sans-serif;
+    background: linear-gradient(0deg, #740075,#7ceeff);
+    background-clip: text;
+    color: transparent;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#collabo-container > div > h2 > span {
+    display: block;
+}
+
+#collabo-container > div > p {
+    width: 500px;
+    line-height: 2rem;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+#collabo-container > div:nth-child(1) > div  > a {
+    display: block;
+    width: 250px;
+    height: 40px;
+    border: 2px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+
+#collabo-container > div:nth-child(1) > div  > a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background-color: #fff;
+    transition: all 0.4s;
+}
+
+#collabo-container > div:nth-child(1) > div  > a:hover {
+    color: #333;
+    box-shadow: 0 0 10px #333;
+}
+
+#collabo-container > div:nth-child(1) > div  > a:hover::before {
+    width: 100%;
+}
+
+#gentle-style {
+    margin: 100px 0;
+}
+
+#gentle-style > p {
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#gentle-style > p > span {
+    display: block;
+}
+
+#gentle-style > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 30px;
+    padding: 0px;
+}
+
+#gentle-style > ul > li:first-child{
+    transform-origin: 50px 100px;
+    transform: rotate(10deg);
+}
+
+#gentle-style > ul > li:nth-child(3) {
+    transform-origin: 50px 100px;
+    transform: rotate(-10deg);
+}
+
+#gentle-style > ul > li:nth-child(4) {
+    transform-origin: 100px 100px;
+    transform: rotate(-10deg);
+}
+
+#gentle-style > ul > li:nth-child(6) {
+    transform-origin: top left;
+    transform: rotate(10deg);
+}
+
+#gentle-style > ul > li > img {
+    opacity: 0;
+}
+
+
+.flow-text {
+    margin-bottom: 10rem;
+    display: flex;
+    overflow-x: hidden;
+}
+.flow-text:first-child {
+    transform: rotate(-2deg);
+    background-color: #8dff77;
+}
+
+.flow-text:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: #8dff77;
+    justify-content: flex-end;
+}
+
+.flow-text > p {
+    display: flex;
+    color: #333;
+    padding: 2rem 0;
+    font-size: 3rem;
+    font-family: "Exo 2", sans-serif;
+    white-space: nowrap;
+}
+
+

@@ -1,0 +1,78 @@
+#sub2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0 90px 120px 90px;
+    color: #09477f;
+    background-color: #e1efff;
+}
+
+#sub2 > div {
+    width: 100%;
+}
+
+#sub2 >  div > h1 {
+    font-size: 10rem;
+    text-align: center;
+    font-family: "canvas-script", sans-serif;
+    font-weight: 200;
+}
+
+#recipe {
+    margin: 120px;
+}
+
+#recipe > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    row-gap: 120px;
+}
+
+#recipe > ul > li {
+    position: relative;
+    overflow: hidden;
+}
+
+#recipe > ul > li > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    top: 100%;
+    left: 0;
+    background: rgba(54, 54, 54, 0.9);
+    color: #fff;
+    opacity: 0;
+    transition: top 0.5s ease, opacity 0.5s ease;
+}
+
+#recipe > ul > li:hover div {
+    opacity: 1;
+    top: 0;
+}
+
+#recipe > ul > li > div > p {
+    display: block;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+#recipe > ul > li > div > h2 {
+    font-size: 2rem;
+    line-height: 6rem;
+    font-weight: bold;
+}
+
+#recipe > ul > li > div > ol {
+    padding: 20px;
+    font-size: 1.25rem;
+}
+
+#recipe > ul > li > div > ol > li {
+    list-style: decimal;
+    line-height: 3rem;
+}
+

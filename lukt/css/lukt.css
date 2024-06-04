@@ -1,0 +1,270 @@
+body {
+    color: #09477f;
+}
+
+#banner {
+    padding: 20px 90px;
+    display: flex;
+    overflow: hidden;
+}
+
+#banner > div > p {
+    font-family: rooney-sans, sans-serif;
+    font-weight: 900;
+    font-size: 12rem;
+    color: #09477f;
+    text-transform: uppercase;
+    /* letter-spacing: 0.3rem; */
+}
+
+#banner > div > p:first-child {
+    position: relative;
+    left: -100%;
+    animation: text 1s ease-in-out forwards;
+}
+
+#banner > div > p:nth-child(2) {
+    text-align: right;
+    position: relative;
+    left: -100%;
+    animation: text 1.5s ease forwards;
+}
+
+@keyframes text {
+    from {
+        left: -100%;
+        opacity: 0;
+    }
+    to {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+#banner > img {
+    object-fit: contain;
+    size: 100%;
+    animation: gobbler 4s linear 0.1s infinite alternate both;
+}
+
+@keyframes gobbler {
+    0% {transform: rotate(0deg);}
+    34% {transform: rotate(-7.2deg);}
+    67% {transform: rotate(0deg);}
+    100% {transform: rotate(7.2deg);}
+}
+
+#banner > img:hover {
+    animation-play-state: paused;
+}
+
+#wrap-container {
+    padding: 20px 90px;
+    background-image: url(../images/bg1.png), url(../images/bg3.png), url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 10% 20%, 40% 90%, 80% 50%;
+}
+
+#intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+#intro-container > div > p {
+    display: block;
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#intro-container > div > h2::before {
+    content: "그릭요거트 룩트";
+    font-size: 5rem;
+    color: white;
+    text-shadow: -1px -1px 0 #09477f, 1px -1px 0 #09477f, -1px 1px 0 #09477f, 1px 1px 0 #09477f;
+    display: block;
+    text-align: center;
+}
+
+#intro-container > div > h2::after {
+    content: "그릭요거트 룩트";
+    font-size: 5rem;
+    color: #09477f;
+    text-shadow: -1px -1px 0 #09477f, 1px -1px 0 #09477f, -1px 1px 0 #09477f, 1px 1px 0 #09477f;
+    display: block;
+    text-align: center;
+}
+
+
+#intro-container > div > h2 {
+    position: relative;
+    font-size: 5rem;
+    color: white;
+    text-shadow: -1px -1px 0 #09477f, 1px -1px 0 #09477f, -1px 1px 0 #09477f, 1px 1px 0 #09477f;
+}
+
+#intro-container > div > img {
+    display: block;
+    margin: 30px auto;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 200px;
+}
+
+.page > div > h2 {
+    font-size: 3.75rem;
+    margin: 50px 0;
+    font-weight: bold;
+}
+
+.first {
+    background-image: url(../images/background1.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+
+.first >  div:first-child > img {
+    display: block;
+    margin: 50px auto;
+}
+
+.page >  div:first-child > p {
+    display: block;
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+.page >  div:first-child > p:last-child {
+    font-size: 1.5rem;
+    
+}
+
+.page >  div:first-child > p:last-child > span {
+    display: block;
+    line-height: 2.5rem;
+}
+
+
+.second {
+    background-image: url(../images/background2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.second >  div:first-child > img {
+    display: block;
+    margin: 50px auto;
+}
+
+
+.third {
+    background-image: url(../images/background3.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+
+
+.third >  div:first-child > img {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+#recipe-container {
+    margin-top: 100px;
+}
+
+#recipe-container > div {
+    display: flex;
+    gap: 70px;
+    margin: 100px 0;
+}
+
+#recipe-container > div > h2 {
+    font-family: rooney-sans, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+#recipe-container > div > div > h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0;
+}
+#recipe-container > div > div > p {
+    font-size: 1.125rem;
+    padding: 0 30px;
+    margin: 50px 0;
+    text-align: center;
+    line-height: 1.5rem;
+}
+#recipe-container > div > div > p > span {
+    display: block;
+}
+
+#recipe-container > div > div > div {
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+#recipe-container > div > div > div > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid #e1efff;
+    color: #09477f;
+    padding: 5px 5px;
+    font-size: 1.125rem;
+    line-height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+#recipe-container > div > div > div > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 170%;
+    background: #e1efff;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    transition: 0.8s;
+}
+
+#recipe-container > div > div > div > a:hover::after {
+    height: 0%;
+}
+
+#insta {
+    overflow: hidden;
+}
+
+#insta > ul {
+    display: flex;
+    gap: 30px;
+    margin-left: 25px;
+    /* position: relative;
+    top: 0;
+    left: 0; */
+}
+
+
